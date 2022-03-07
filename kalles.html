@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="kalles.css">
+  <title>kalles</title>
+</head>
+
+<body>
+  <!-- nav -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand justify-content-center mx-auto justify-content-lg-end fw-bolder fs-2" href="#">Kalles</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto  mb-2 mb-lg-auto mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Demo</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn position-relative p-0 m-0">
+            <a class="nav-link" href="#">Shop</a> 
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info fw-lighter">
+                New
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Product</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn position-relative p-0 m-0">
+              <a class="nav-link text-warning">Sale</a>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning fw-lighter">
+                Sale
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Lookbook</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"><i class="fas fa-search"></i></button>
+      <span><i class="far fa-user d-none d-lg-flex btn"></i></span>
+      
+      <button type="button" class="btn position-relative p-0 m-0">
+        <span><i class="far fa-heart d-none d-lg-flex btn"></i></span>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark fw-lighter d-none d-lg-flex">
+          0
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </button>
+      
+      <button type="button" class="btn position-relative p-0 m-0">
+        <span><i class="fas fa-shopping-cart d-flex btn"></i></span>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark fw-lighter">
+          0
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </button>
+    </div>
+
+  </nav>
+  <!-- end nav -->
+  <!-- canvas  -->
+  <button class="btn d-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+    aria-controls="offcanvasRight"><i class="fas fa-search"></i></button>
+
+  <div class="offcanvas offcanvas-end vw-25" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel">Search our site</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="dropdown">
+        <button class="btn dropdown-toggle w-100 text-start d-flex justify-content-between border-secondary"
+          type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          All Categories
+        </button>
+        <ul class="dropdown-menu w-100 " aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Men</a></li>
+          <li><a class="dropdown-item" href="#">Women</a></li>
+          <li><a class="dropdown-item" href="#">Watch</a></li>
+          <li><a class="dropdown-item" href="#">FootWear</a></li>
+          <li><a class="dropdown-item" href="#">Bags</a></li>
+
+        </ul>
+      </div>
+
+      <form class="d-flex mt-3 mt-lg-3 mb-5">
+        <div class="input-group mb-3 border-secondary">
+          <input type="search" class="form-control " placeholder="Search" aria-label="Search"
+            aria-describedby="basic-addon1">
+          <span class="input-group-text bg-light" id="basic-addon1"><i class="fas fa-search"></i></span>
+        </div>
+      </form>
+      <!-- txt  -->
+      <hr style="margin: 0;">
+      <h4><span class="badge m-0" style="color: black;">Need some inspiration?</span></h4>
+      <hr style="margin: 0;">
+      <!-- images -->
+      <div class="card mb-3 mt-2" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./img/analogue.jfif" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h6 class="card-title">Analogue Resin Strap</h6>
+              <p class="card-text text-muted">$30.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end img  -->
+      <!-- images -->
+      <div class="card mb-3 mt-2" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./img/ridly.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h6 class="card-title">Ridley High Waist</h6>
+              <p class="card-text text-muted">$36.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end img  -->
+      <!-- images -->
+      <div class="card mb-3 mt-2" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./img/blush.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h6 class="card-title">Blush Beanie</h6>
+              <p class="card-text text-muted">$15.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end img  -->
+      <a class="fw-bold" data-aos="fade-up" style="text-decoration: none; color: black;">view all <i
+          class="fas fa-long-arrow-alt-right"></i></a>
+    </div>
+  </div>
+  <!-- end canvas  -->
+  <!-- carousel  -->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner vh-100">
+      <div class="carousel-item active">
+        <img src="./img/slider1.jpg" class="d-block w-100 vh-100" alt="...">
+        <div class="carousel-caption  d-block  text-end" style="bottom: 35%; text-shadow: 2px 2px 5px black;">
+          <p class="fs-3 m-0" style="color: black;">SUMMER 2022</p>
+          <h1 class = "ms-0 mt-0 mb-5 fs-1"style="font-size: 50px; color: black;">New Arrival Collection</h1>
+          <button class="btn btn-dark w-25" type="submit">Shop Now</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/slider2.jfif" class="d-block w-100 vh-100" alt="...">
+        <div class="carousel-caption  d-block  text-start" style="bottom: 35%; text-shadow: 2px 2px 5px black;">
+          <p class="fs-3 m-0" style="color: black;">SUMMER SALE</p>
+          <h1 class = "ms-0 mt-0 mb-5 fs-1"style="font-size: 50px; color: black;">Save up to 70%</h1>
+          <button class="btn btn-dark w-25" type="submit">Shop Now</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/slider3.jfif" class="d-block w-100 vh-100" alt="...">
+        <div class="carousel-caption  d-block  text-start" style="bottom: 35%; text-shadow: 2px 2px 5px black;">
+          <p class="fs-3 m-0" style="color: black;">SUMMER SALE</p>
+          <h1 class = "ms-0 mt-0 mb-5 fs-1"style="font-size: 50px; color: black;">Save up to 70%</h1>
+          <button class="btn btn-dark w-25" type="submit">Shop Now</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- end carousel -->
+
+  <!-- cateogories -->
+    <div class="container mt-4 mb-5  justify-content-center" id="cat">
+      <div class="row gap-2">
+        <div class="col-12 col-md overflow-hidden">
+          <div class="card text-white bg-secondary bg-opacity-10">
+            <img src="./img/woman.png" id="women" class="card-img" alt="...">
+            <div class="card-img-overlay mx-auto" style="top: 90%; left: 30%;">
+              <button class="btn btn-light px-5" type="submit" >Women</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md overflow-hidden">
+          <div class="card text-white h-100 bg-secondary bg-opacity-10">
+            <img src="./img/man (2).png" id="men" class="card-img" alt="...">
+            <div class="card-img-overlay mx-auto" style="top: 90%; left: 30%;">
+              <button class="btn btn-light px-5" type="submit" >Men</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row gap-2 mt-3 h-100">
+        <div class="col overflow-hidden">
+          <div class="card text-white h-100  bg-secondary bg-opacity-10">
+            <img src="./img/shoes.png" id="shoes" class="card-img" alt="..." style="width: 100%; height: 100%; object-fit: contain;">
+            <div class="card-img-overlay mx-auto" style="top: 67%; left: 30%;">
+              <button class="btn btn-light" type="submit" >Shoes</button>
+            </div>
+          </div>
+        </div>
+        <div class="col overflow-hidden ">
+          <div class="card text-white w-100 h-100 bg-secondary bg-opacity-10">
+            <img src="./img/bag.png" id="bag" class="card-img" alt="..." style="width: 100%; height: 100%; object-fit: contain; position: absolute;">
+            <div class="card-img-overlay mx-auto" style="top: 67%; left: 30%;">
+              <button class="btn btn-light" type="submit" >Bags</button>
+            </div>
+          </div>
+        
+        </div>
+        <div class=" col-12 col-md-6 overflow-hidden" style="bottom: 40%;">
+          <div class="card text-white bg-secondary bg-opacity-10 h-100">
+            <img src="./img/watch.png" id="watch" class="card-img" alt="..." style="height: 300px;  object-fit: contain;">
+            <div class="card-img-overlay mx-auto" style="top: 75%; left: 30%;">
+              <button class="btn btn-light px-5" type="submit" >Watches</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- end categories  -->
+<!-- trend -->
+    <h3 class="text-center fw-bold mb-5">__________ TRENDING __________ </h3>
+    <div class="container-fluid mb-5">
+      <div class="row">
+        <div class="col-lg col-6 mb-3">
+          <div class="card" style="width: 18rem;">
+            <img  class="d-block w-100 h-100 card-img-top " id="analogue" src="./img/analogue.jfif">
+            <div class="card-body">
+              <h6 class="card-title">Analogue Resin Strap</h6>
+              <p class="card-text text-muted">$30.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-6 mb-3">
+          <div class="card" style="width: 18rem;">
+            <img class="d-block w-100 h-100 card-img-top" id="blush" src="./img/blush.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title">Blush Beanie</h6>
+              <p class="card-text text-muted">$15.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-6 overflow-hidden mb-3">
+          <div class="card" style="width: 18rem;">
+            <img class="d-block w-100 h-100 card-img-top" id="ridly" src="./img/ridly.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title">Ridley High Waist</h6>
+              <p class="card-text text-muted">$36.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-6 overflow-hidden mb-3">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+           
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="card" style="width: 18rem;">
+                    <img class="d-block w-100 h-100 card-img-top" id="t-shirt" src="./img/t-shirt.jpg" alt="">
+                      <div class="card-body">
+                        <h6 class="card-title">Cluse La Boheme Rose Gold</h6>
+                        <p class="card-text text-muted">$45.00</p>
+                      </div>
+                    </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card" style="width: 18rem;">
+                  <img class="d-block w-100 h-100 card-img-top" id="t-shirt" src="./img/bluet.jpg" alt="">
+                    <div class="card-body">
+                      <h6 class="card-title">Cluse La Boheme Rose Gold</h6>
+                      <p class="card-text text-muted">$45.00</p>
+                    </div>
+                  </div> 
+              </div>
+              <div class="carousel-item">
+                <div class="card" style="width: 18rem;">
+                  <img class="d-block w-100 h-100 card-img-top" id="t-shirt" src="./img/grayt.jpg" alt="">
+                    <div class="card-body">
+                      <h6 class="card-title">Cluse La Boheme Rose Gold</h6>
+                      <p class="card-text text-muted">$45.00</p>
+                    </div>
+                  </div> 
+              </div>
+            </div>
+            <div class="carousel-indicators text-start mt-2">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: rgb(149, 236, 61);"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: rgb(29, 29, 191);"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: gray;"></button>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+         
+          </div>
+          <!-- <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card" style="width: 18rem;">
+                  <img class="d-block w-100 h-100 card-img-top" id="t-shirt" src="./img/t-shirt.jpg" alt="">
+                    <div class="card-body">
+                      <h6 class="card-title">Cluse La Boheme Rose Gold</h6>
+                      <p class="card-text text-muted">$45.00</p>
+                    </div>
+                  </div> 
+              </div>
+              <div class="carousel-item">
+                <div class="card" style="width: 18rem;">
+                  <img class="d-block w-100 h-100 card-img-top" id="t-shirt" src="./img/t-shirt.jpg" alt="">
+                    <div class="card-body">
+                      <h6 class="card-title">Cluse La Boheme Rose Gold</h6>
+                      <p class="card-text text-muted">$45.00</p>
+                    </div>
+                  </div> 
+              </div>
+              <div class="carousel-item">
+                <div class="card" style="width: 18rem;">
+                  <img class="d-block w-100 h-100 card-img-top" id="t-shirt" src="./img/t-shirt.jpg" alt="">
+                    <div class="card-body">
+                      <h6 class="card-title">Cluse La Boheme Rose Gold</h6>
+                      <p class="card-text text-muted">$45.00</p>
+                    </div>
+                  </div> 
+              </div>
+            </div>
+          
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> -->
+        </div>
+<!-- end trend  -->
+<!-- new collection  -->
+ <div class="container mt-5 mb-5">
+   <div class="row">
+     <div class="col-12 col-md-6 col-lg-4">
+      <div class="card bg-light text-white w-100 h-100">
+        <img src="./img/container1.jfif" class="card-img" alt="..." style="width: 100%; height: 100%;">
+        <div class="card-img-overlay" style="top: 75%; text-shadow: 2px 2px 4px black;">
+          <p class="card-text ms-auto mt-auto">VIEW COLLECTIONS</p>
+          <h1 class="card-title">LOOKBOOK</h1>
+          <p class="card-text text-muted">your world of fashin in numbers</p>
+        </div>
+      </div>
+     </div>
+     <div class="col-12 col-md-6 col-lg-4">
+      <div class="card bg-secondary bg-opacity-50 text-white w-100 h-100">
+        <img id="cwatch" src="./img/watch.png" class="card-img" alt="...">
+        <div class="card-img-overlay" style="top: 20px; left: 80%;">
+          <span class="badge rounded-pill p-3 bg-warning text-light">30%</span>
+        </div>
+      </div>
+     </div>
+     <div class="col-12  col-lg-4">
+      <div class="card bg-light text-white w-100 h-100">
+        <img  src="./img/container2.jfif" class="card-img" alt="..." style="width: 100%; height: 100%;">
+        <div class="card-img-overlay text-center" style="top: 30%;  text-shadow: 2px 2px 4px black;">
+          <p class="card-text ms-auto mt-auto">MEN COLLECTIONS</p>
+          <h1 class="card-title">SALE 70%</h1>
+          <button class="btn btn-light text-light" style="background: rgba(255, 255, 255, 0.439); border-radius: 30px; border: 3px solid black; left: 20%;">Shop Now</button>
+        </div>
+      </div>
+     </div>
+   </div>
+ </div>
+ <h3 class="text-center fw-bold mb-5">__________ FOLLOW US ON INSTAGRAM __________ </h3>
+
+<!-- end collection  -->
+
+
+
+      
+<footer class="footer">
+  <div class="footer__addr">
+    <h1 class="footer__logo">Something</h1>
+        
+    <h2>Contact</h2>
+    
+    <address>
+      5534 Somewhere In. The World 22193-10212<br>
+          
+      <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+    </address>
+  </div>
+  
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">Media</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Online</a>
+        </li>
+
+        <li>
+          <a href="#">Print</a>
+        </li>
+            
+        <li>
+          <a href="#">Alternative Ads</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item nav__item--extra">
+      <h2 class="nav__title">Technology</h2>
+      
+      <ul class="nav__ul nav__ul--extra">
+        <li>
+          <a href="#">Hardware Design</a>
+        </li>
+        
+        <li>
+          <a href="#">Software Design</a>
+        </li>
+        
+        <li>
+          <a href="#">Digital Signage</a>
+        </li>
+        
+        <li>
+          <a href="#">Automation</a>
+        </li>
+        
+        <li>
+          <a href="#">Artificial Intelligence</a>
+        </li>
+        
+        <li>
+          <a href="#">IoT</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item">
+      <h2 class="nav__title">Legal</h2>
+      
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        
+        <li>
+          <a href="#">Terms of Use</a>
+        </li>
+        
+        <li>
+          <a href="#">Sitemap</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  
+  <div class="legal">
+    <p>&copy; 2019 Something. All rights reserved.</p>
+    
+    <div class="legal__links">
+      <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://kit.fontawesome.com/559873c92b.js" crossorigin="anonymous"></script>
+  <script src="./kalles.js"></script>
+</body>
+
+</html>
